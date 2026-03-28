@@ -14,10 +14,13 @@
 
 # 学習済みのモデルの重みファイル（容量が大きいため）
 *.npy
-*.pth       # PyTorch
-*.h5        # TensorFlow/Keras
+# PyTorch
+*.pth     
+# TensorFlow/Keras  
+*.h5        
 *.onnx
-*.pkl       # ピックルファイル（データの一時保存など）
+# ピックルファイル（データの一時保存など）
+*.pkl       
 
 
 # Windowsの代替データストリーム
@@ -42,6 +45,9 @@ env/
 # =======================
 # 3. エディタやOSの隠しファイル
 # =======================
-.vscode/    # VS Vodeの設定フォルダ
-.DS_Store   # macOSのシステムファイル
-Thumbs.db   # Windowsのシステムファイル
+# VS Vodeの設定フォルダ
+.vscode/   
+# macOSのシステムファイル 
+.DS_Store  
+# Windowsのシステムファイル 
+Thumbs.db   
