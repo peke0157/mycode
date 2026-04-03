@@ -16,19 +16,20 @@ def predict(audiopath):
     features = np.concatenate([mean, std])
     
     # 音楽ジャンル
-    class_genru = {
+    class_genrus = [
         "blues", "classical", "country", "disco", "environment", "hiphop", "jazz", "metal", "pop", "reggae", "rock"
-    }
+    ]
+    
     # 学習モデルの反映
     scaler = joblib.load('expscaler.pkl')
     model = joblib.load('expmodel.pkl')
     
     transform = scaler.transform([features])
-    probs = model.predict_proba([features])[0]
+    probs = model.predict_proba(transform)[0]
     
     genru = {}
     
-    for i, class_genrus in enumerate(class_genru):
+    for i, class_genru in enumerate(class_genrus):
         genru[class_genru] = float(probs[i])
         
 
