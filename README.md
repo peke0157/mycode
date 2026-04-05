@@ -17,7 +17,7 @@ $ python app.py
 ```
 URLをCtrl+左クリックでアクセスします。
 URLの起動後は写真のようなアプリケーションが表示されます。
-<img src="https://1drv.ms/i/c/f189eb2e8e3a452f/IQBWio6Kx3kvRrps8UpZkaHZAZSbvHn9SGXm0D4G_6tJjU4?e=JYr6ZD">
+<img width="900" height="750" src="スクリーンショット 2026-04-05 000255.png">
 左画面のaudiopathにジャンル判定をする音楽ファイルを入力します。Submitをクリックすると予測結果の音楽ジャンルが出力されます。
 # 必要なソフトウェア
 - Python
